@@ -6,6 +6,8 @@ import (
 	"time"
 )
 
+// Test that error will be returned if subsequent request
+// exceeds `count` within throttle time frame.
 func TestRateLimiter(t *testing.T) {
 	throttle := 2
 	period := 1 * time.Second
