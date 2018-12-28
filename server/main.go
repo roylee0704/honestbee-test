@@ -139,7 +139,7 @@ func rateLimiter(sessions map[SessionID]*freq, sessionID SessionID, throttle int
 			r.Count = 1
 			r.StartTime = now
 		} else {
-			if r.Count > throttle {
+			if r.Count >= throttle {
 				return errors.New("403 Forbidden")
 			}
 			r.Count++
