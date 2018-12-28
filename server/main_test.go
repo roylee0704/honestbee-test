@@ -23,7 +23,7 @@ func TestRateLimiter(t *testing.T) {
 		{2, now, errors.New("403 Forbidden")},
 		{3, now, errors.New("403 Forbidden")},
 
-		//  10 seconds window
+		//  after 10 seconds window
 		{1, now.Add(10 * time.Second), nil},
 		{2, now.Add(10 * time.Second), nil},
 		{3, now.Add(10 * time.Second), nil},
