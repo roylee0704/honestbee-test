@@ -7,7 +7,7 @@ import (
 )
 
 // Test that error will be returned if subsequent request
-// exceeds throttle limit (count + 1 >= throttle) within 1 second period.
+// exceeds throttle limit (count + 1 > throttle) within 1 second period.
 func TestRateLimiter(t *testing.T) {
 	throttle := 2
 	period := 1 * time.Second
