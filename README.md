@@ -1,4 +1,4 @@
-### HonestBee TakeHome Test(BackEnd Engineer) 
+### HonestBee Take-Home Test(Backend Engineer)
 
 ## Usage 
 
